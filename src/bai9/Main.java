@@ -23,7 +23,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("🔹 Nhập số tài khoản: ");
+                    System.out.print("Nhập số tài khoản: ");
                     String depositAccId = scanner.next();
                     BankAccount depositAcc = findAccount(accounts, depositAccId);
                     if (depositAcc != null) {
@@ -57,11 +57,11 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.print("🔹 Nhập số tài khoản nguồn: ");
+                    System.out.print("Nhập số tài khoản nguồn: ");
                     String senderAccId = scanner.next();
                     BankAccount sender = findAccount(accounts, senderAccId);
                     if (sender != null) {
-                        System.out.print("🔹 Nhập số tài khoản đích: ");
+                        System.out.print("Nhập số tài khoản đích: ");
                         String receiverAccId = scanner.next();
                         BankAccount receiver = findAccount(accounts, receiverAccId);
                         if (receiver != null) {
